@@ -47,6 +47,12 @@ const avg_temperature_in_fahrenheit = tot_temperature_in_fahrenheit / 30;
 const tot_temperature_in_celsius = (tot_temperature_in_fahrenheit - 32) * 5 / 9;
 const avg_temperature_in_celsius = tot_temperature_in_celsius / 30;
 
+// Round all temperatures to 2 decimal places
+const rounded_tot_temperature_in_fahrenheit = parseFloat(tot_temperature_in_fahrenheit.toFixed(2));
+const rounded_avg_temperature_in_fahrenheit = parseFloat(avg_temperature_in_fahrenheit.toFixed(2));
+const rounded_tot_temperature_in_celsius = parseFloat(tot_temperature_in_celsius.toFixed(2));
+const rounded_avg_temperature_in_celsius = parseFloat(avg_temperature_in_celsius.toFixed(2));
+
 // Output the results
 console.log("Total temperature in Celsius:", tot_temperature_in_celsius);
 console.log("Average temperature in Celsius:", avg_temperature_in_celsius);
